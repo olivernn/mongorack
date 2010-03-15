@@ -1,0 +1,12 @@
+GET /:collection - index
+GET /:collection/:id - single document
+POST /:collection - create a document
+PUT /:collection/:id - update a document
+DELETE /:collection/:id - delete a document
+
+expose : can view and update all documents
+contain : can view all documents but only update your own documents
+protect : can only view and update your own documents
+
+expose :posts
+protect :users
